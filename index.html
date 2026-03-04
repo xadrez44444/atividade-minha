@@ -11,6 +11,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            padding-bottom: 80px; /* Espaço para o footer não cobrir o texto */
             background-color: #f4f4f9;
             color: #333;
         }
@@ -25,21 +26,52 @@
         }
         .container {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
+
+        /* --- ESTILO PARA AS IMAGENS --- */
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+            padding: 10px;
+            border: 2px dashed #4CAF50; /* Borda tracejada para ajudar você a visualizar o espaço */
+            background-color: #f9f9f9;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+        .caption {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        /* ------------------------------ */
+
         h2 {
             color: #4CAF50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
         }
         ul {
-            margin-top: 0;
+            margin-top: 10px;
             padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #4CAF50;
             color: white;
             position: fixed;
@@ -55,6 +87,12 @@
     </header>
 
     <div class="container">
+        
+        <div class="image-container">
+            <img src="ADICIONE_AQUI_O_LINK_DA_IMAGEM_1" alt="Imagem de Capa">
+            <p class="caption">Dica: Use uma imagem que represente foco e organização.</p>
+        </div>
+
         <h2>1. Organize-se</h2>
         <p>A organização é a chave para o sucesso. Quando você tem uma rotina organizada, fica mais fácil administrar o tempo, as tarefas e os estudos.</p>
         <ul>
@@ -67,51 +105,51 @@
         <p>Responsabilidade é essencial para o bom desempenho escolar. Isso significa cumprir prazos, se empenhar nas atividades e cuidar do seu aprendizado.</p>
         <ul>
             <li><strong>Entenda seus compromissos:</strong> Sempre tenha em mente suas responsabilidades, como trabalhos de classe, estudos e até participação nas aulas.</li>
-            <li><strong>Cumpra prazos:</strong> Sempre entregue suas tarefas no prazo. Se você tiver dificuldades, converse com seus professores com antecedência.</li>
-            <li><strong>Peça ajuda quando precisar:</strong> Se não entender alguma matéria, busque a ajuda de colegas ou professores para não ficar para trás.</li>
+            <li><strong>Cumpra prazos:</strong> Sempre entregue suas tarefas no prazo.</li>
         </ul>
+
+        <div class="image-container">
+            <img src="ADICIONE_AQUI_O_LINK_DA_IMAGEM_2" alt="Alunos estudando">
+            <p class="caption">A troca de conhecimentos em sala de aula é fundamental.</p>
+        </div>
 
         <h2>3. Participe Ativamente das Aulas</h2>
         <p>A participação nas aulas é uma das formas mais eficazes de aprender.</p>
         <ul>
-            <li><strong>Preste atenção:</strong> Evite distrações e esteja atento durante as explicações dos professores.</li>
-            <li><strong>Pergunte e converse:</strong> Se algo não ficou claro, pergunte! Interaja com seus colegas e professores para esclarecer suas dúvidas.</li>
-            <li><strong>Anote o que for importante:</strong> Fazer anotações ajuda a fixar o conteúdo na memória e é um ótimo material de revisão.</li>
+            <li><strong>Preste atenção:</strong> Evite distrações e esteja atento durante as explicações.</li>
+            <li><strong>Pergunte e converse:</strong> Se algo não ficou claro, pergunte!</li>
         </ul>
 
         <h2>4. Desenvolva Hábitos de Estudo Eficientes</h2>
-        <p>Estudar com eficiência é mais importante do que estudar por muitas horas. Aqui estão algumas dicas:</p>
+        <p>Estudar com eficiência é mais importante do que estudar por muitas horas.</p>
+
+        <div class="image-container">
+            <img src="ADICIONE_AQUI_O_LINK_DA_IMAGEM_3" alt="Mapa Mental ou Resumo">
+            <p class="caption">Mapas mentais ajudam a fixar o conteúdo visualmente.</p>
+        </div>
+
         <ul>
-            <li><strong>Faça resumos e mapas mentais:</strong> Em vez de apenas ler os livros, tente resumir o conteúdo ou fazer mapas mentais. Isso vai ajudar a fixar o aprendizado.</li>
-            <li><strong>Revise com frequência:</strong> Estudar apenas na véspera de uma prova não é uma boa estratégia. Faça revisões periódicas para reter melhor o conteúdo.</li>
-            <li><strong>Estude em ambientes tranquilos:</strong> Procure um local silencioso para estudar, sem distrações. Isso melhora sua concentração.</li>
+            <li><strong>Faça resumos:</strong> Tente resumir o conteúdo ou fazer mapas mentais.</li>
+            <li><strong>Revise com frequência:</strong> Faça revisões periódicas para reter melhor o conteúdo.</li>
         </ul>
 
         <h2>5. Cuide do Seu Bem-Estar</h2>
         <p>A saúde física e mental são fundamentais para um bom desempenho acadêmico.</p>
         <ul>
-            <li><strong>Durma bem:</strong> O sono é crucial para o aprendizado e a memória. Tente dormir entre 7 a 8 horas por noite.</li>
-            <li><strong>Alimente-se corretamente:</strong> Uma boa alimentação ajuda na concentração e no foco.</li>
-            <li><strong>Pratique atividades físicas:</strong> O exercício melhora o seu humor e a disposição, além de reduzir o estresse.</li>
+            <li><strong>Durma bem:</strong> O sono é crucial para o aprendizado e a memória.</li>
+            <li><strong>Alimente-se corretamente:</strong> Uma boa alimentação ajuda na concentração.</li>
         </ul>
 
         <h2>6. Seja Respeitoso e Colaborativo</h2>
-        <p>Ter uma boa convivência com seus colegas e professores é muito importante para o ambiente escolar.</p>
-        <ul>
-            <li><strong>Respeite os outros:</strong> Seja educado, ouça os outros e seja gentil para criar um ambiente mais harmonioso.</li>
-            <li><strong>Trabalhe em equipe:</strong> Em muitos momentos, você vai precisar colaborar com os colegas. A capacidade de trabalhar em grupo é uma habilidade valiosa.</li>
-            <li><strong>Aceite críticas construtivas:</strong> Sempre há espaço para melhorar. Aceitar críticas de forma positiva ajuda no seu crescimento.</li>
-        </ul>
+        <p>Ter uma boa convivência com seus colegas e professores é muito importante.</p>
 
         <h2>7. Tenha Persistência</h2>
-        <p>Nem sempre o caminho será fácil, e você pode encontrar desafios ao longo da jornada escolar.</p>
-        <ul>
-            <li><strong>Não desista facilmente:</strong> Mesmo quando o conteúdo for difícil, mantenha-se motivado e continue se esforçando.</li>
-            <li><strong>Busque soluções para os problemas:</strong> Enfrentar desafios faz parte do processo de aprendizagem. Se você encontrar dificuldades, procure soluções e aprenda com elas.</li>
-        </ul>
+        <p>Nem sempre o caminho será fácil, mas enfrentar desafios faz parte do processo.</p>
+
+        <hr>
 
         <h2>Conclusão</h2>
-        <p>Ser um bom aluno não significa ser perfeito, mas sim estar comprometido com o seu aprendizado, ser responsável e buscar o melhor de si. Lembre-se de que a escola é uma etapa importante da vida, mas o que você aprende nela será útil ao longo de toda a sua jornada. Portanto, aproveite as oportunidades de crescer, aprender e desenvolver novas habilidades!</p>
+        <p>Ser um bom aluno não significa ser perfeito, mas sim estar comprometido com o seu aprendizado. Aproveite as oportunidades de crescer e desenvolver novas habilidades!</p>
     </div>
 
     <footer>
